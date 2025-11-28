@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Course Website - Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="coursestyle.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo">CourseHub</div>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#forms">Forms</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO / BANNER SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Welcome to CourseHub</h1>
+      <p>Learn HTML, CSS, JavaScript, Python and more.</p>
+      <button id="updateBannerBtn">Show Python Course Banner</button>
+    </div>
+    <div class="hero-image">
+      <!-- Default banner -->
+      <img id="bannerImage" src="110277853-coding-and-development-icons-concept-banner-with-various-programming-languages-css-html-java-php.jpg" alt="Course Banner" />
+      <p id="bannerCaption">Default Course Banner</p>
+    </div>
+  </section>
+
+  <!-- COURSES SECTION -->
+  <section id="courses" class="courses-section">
+    <div class="section-header">
+      <h2>Our Courses</h2>
+      <button id="updateCoursesBtn">Update Course Descriptions</button>
+    </div>
+
+    <div class="courses-grid">
+      <div class="course-card">
+        <h3>HTML & CSS Basics</h3>
+        <p class="course-desc">
+          Learn to build simple web pages using basic HTML and CSS.
+        </p>
+      </div>
+
+      <div class="course-card">
+        <h3>JavaScript Essentials</h3>
+        <p class="course-desc">
+          Understand the fundamentals of JavaScript for the web.
+        </p>
+      </div>
+
+      <div class="course-card">
+        <h3>Python for Beginners</h3>
+        <p class="course-desc">
+          Start coding in Python with simple, clear examples.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMS SECTION (LOGIN, SIGNUP, CONTACT) -->
+  <section id="forms" class="forms-section">
+    <h2>Forms</h2>
+    <div class="forms-grid">
+      <!-- LOGIN FORM -->
+      <form id="loginForm" class="form-card">
+        <h3>Login</h3>
+        <label>
+          Email
+          <input type="email" id="loginEmail" required />
+        </label>
+        <label>
+          Password
+          <input type="password" id="loginPassword" required />
+        </label>
+        <button type="submit">Login</button>
+        <p class="form-message" id="loginMsg"></p>
+      </form>
+
+      <!-- SIGNUP FORM -->
+      <form id="signupForm" class="form-card">
+        <h3>Signup</h3>
+        <label>
+          Name
+          <input type="text" id="signupName" required />
+        </label>
+        <label>
+          Email
+          <input type="email" id="signupEmail" required />
+        </label>
+        <label>
+          Password
+          <input type="password" id="signupPassword" required minlength="6" />
+        </label>
+        <button type="submit">Create Account</button>
+        <p class="form-message" id="signupMsg"></p>
+      </form>
+
+      <!-- CONTACT FORM -->
+      <form id="contactForm" class="form-card">
+        <h3>Contact Us</h3>
+        <label>
+          Name
+          <input type="text" id="contactName" required />
+        </label>
+        <label>
+          Email
+          <input type="email" id="contactEmail" required />
+        </label>
+        <label>
+          Message
+          <textarea id="contactMessage" rows="4" required></textarea>
+        </label>
+        <button type="submit">Send Message</button>
+        <p class="form-message" id="contactMsg"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <h2>Contact & Announcements</h2>
+    <p>Email: support@coursehub.com</p>
+    <p>Latest Announcement: <span id="announcementText">New courses coming soon!</span></p>
+    <button id="updateAnnouncementBtn">Add New Announcement</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2025 CourseHub. All rights reserved.</p>
+  </footer>
+
+  <script src="coursescript.js"></script>
+</body>
+</html>
